@@ -50,7 +50,7 @@ class TodoDB {
   }
 
   ///Read
-  static Future<List<NoteModel>> getAllTodos() async {
+  static Future<List<NoteModel>>getAllTodos() async {
     final db = await _getDB();
     final List<Map<String, dynamic>> dbMap = await db.query('Todo');
 
